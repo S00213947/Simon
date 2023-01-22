@@ -3,6 +3,7 @@ package com.example.simon;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.view.WindowManager;
 
 public class MainActivity2 extends AppCompatActivity {
@@ -14,5 +15,8 @@ public class MainActivity2 extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_main2);
+    }
+    public void btnreset(View view) {
+        finish();
     }
 }
